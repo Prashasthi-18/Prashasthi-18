@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="whoami: Boin Prashasthi, aspiring AI engineer; B.Tech CSE (Cyber Security) at VNR VJIET; focus: agentic AI, RAG, LLMOps, guardrails, AI for QA; now: Generative AI Engineer Training at BlackBucks">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="whoami: Boin Prashasthi, software engineer and AI builder; B.Tech CSE (Cyber Security) at VNR VJIET, CGPA 9.15; focus: backend, APIs, full-stack, DevOps, agentic AI, RAG; now: Software Development Intern at FlyingDuck">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0b1f"/><stop offset="1" stop-color="#05060d"/></linearGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16132e"/><stop offset="1" stop-color="#0f1226"/></linearGradient>
@@ -32,20 +32,20 @@
 
     <g class="mono" font-size="17">
       <g clip-path="url(#l1)"><text x="44" y="93"><tspan class="p">$ </tspan><tspan class="c">whoami</tspan></text></g>
-      <g clip-path="url(#l2)"><text x="44" y="127"><tspan class="k">Boin Prashasthi</tspan><tspan class="o">  ·  aspiring AI Engineer</tspan></text></g>
+      <g clip-path="url(#l2)"><text x="44" y="127"><tspan class="k">Boin Prashasthi</tspan><tspan class="o">  ·  software engineer &amp; AI builder</tspan></text></g>
 
       <g clip-path="url(#l3)"><text x="44" y="173"><tspan class="p">$ </tspan><tspan class="c">cat education.txt</tspan></text></g>
-      <g clip-path="url(#l4)"><text x="44" y="207" class="o">B.Tech CSE (Cyber Security)  ·  <tspan class="c">VNR VJIET</tspan></text></g>
+      <g clip-path="url(#l4)"><text x="44" y="207" class="o">B.Tech CSE (Cyber Security)  ·  <tspan class="c">VNR VJIET</tspan>  ·  CGPA 9.15</text></g>
 
       <g clip-path="url(#l5)"><text x="44" y="253"><tspan class="p">$ </tspan><tspan class="c">ls focus/</tspan></text></g>
-      <g clip-path="url(#l6)"><text x="44" y="287" class="a">agentic-ai/   rag/   multi-agent-systems/   llmops/   guardrails/   ai-for-qa/</text></g>
+      <g clip-path="url(#l6)"><text x="44" y="287" class="a">backend/   apis/   full-stack/   devops/   agentic-ai/   rag/</text></g>
 
       <g clip-path="url(#l7)"><text x="44" y="333"><tspan class="p">$ </tspan><tspan class="c">cat now.txt</tspan></text></g>
-      <g clip-path="url(#l8)"><text x="44" y="367" class="o">Generative AI Engineer Training  <tspan class="k">@ BlackBucks</tspan></text></g>
+      <g clip-path="url(#l8)"><text x="44" y="367" class="o">Software Development Intern  <tspan class="k">@ FlyingDuck</tspan></text></g>
     </g>
 
     <!-- cursor appears once the session has finished typing -->
-    <rect x="486" y="353" width="10" height="20" fill="#22d3ee" opacity="0">
+    <rect x="440" y="353" width="10" height="20" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;.60;.63;.66;.69;.72;.75;.78;.81;.84;.87;.9;1" dur="16s" repeatCount="indefinite"/>
     </rect>
 
