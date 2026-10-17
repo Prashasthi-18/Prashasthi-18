@@ -1,22 +1,21 @@
 <p align="center">
-  <img src="./assets/hero.svg" alt="Boin Prashasthi · Aspiring AI Engineer · Agentic AI, RAG, LLMOps, AI for QA" width="100%"/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/hero.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg"/><img src="./assets/hero.svg" alt="Boin Prashasthi · Aspiring AI Engineer · Agentic AI, RAG, LLMOps, AI for QA" width="100%"/></picture>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=760&lines=Building+multi-agent+systems+with+LangGraph+%26+CrewAI;Shipping+RAG+apps+people+can+actually+use;Making+AI+safe+with+guardrails+%26+human-in-the-loop;Turning+requirements+into+tested+software+with+AI" alt="What I build"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=900&lines=Building+multi-agent+systems+with+LangGraph+%26+CrewAI;Shipping+RAG+apps+people+can+actually+use;Making+AI+safe+with+guardrails+%26+human-in-the-loop;Turning+requirements+into+tested+software+with+AI" alt="What I build"/>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/prashasthiboin/"><img src="https://img.shields.io/badge/LinkedIn-prashasthiboin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Email-boinprashasthi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://komarev.com/ghpvc/?username=Prashasthi-18&style=for-the-badge&color=7c3aed&label=Profile+views" alt="Profile views"/>
 </p>
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## About me
 
-<p align="center"><img src="./assets/about.svg" alt="whoami: Boin Prashasthi, aspiring AI Engineer, B.Tech CSE (Cyber Security) at VNR VJIET" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/about.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/about-light.svg"/><img src="./assets/about.svg" alt="whoami: Boin Prashasthi, aspiring AI Engineer, B.Tech CSE (Cyber Security) at VNR VJIET" width="100%"/></picture></p>
 
 I build applications on top of large language models that are meant to be used, not just demoed: multi-agent pipelines, retrieval-augmented assistants, guardrailed chatbots and AI tools that automate software testing.
 
@@ -27,9 +26,9 @@ I build applications on top of large language models that are meant to be used, 
 - **Security:** Cyber Security background with a CTF win and 7+ CTF competitions
 - **Product:** I write PRDs and product teardowns, and design AI products around real users
 
-<p align="center"><img src="./assets/pipeline.svg" alt="How I build: Understand, Retrieve, Reason, Guard, Ship" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pipeline.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.svg"/><img src="./assets/pipeline.svg" alt="How I build: Understand, Retrieve, Reason, Guard, Ship" width="100%"/></picture></p>
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## Featured projects
 
@@ -126,16 +125,16 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 
 </details>
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## Tech stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,js,ts,react,vite&theme=dark" alt="Languages and frontend"/><br/>
-  <img src="https://skillicons.dev/icons?i=fastapi,flask,sqlite,docker,linux,git,github,githubactions,vscode&theme=dark" alt="Backend and tools"/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,js,ts,react,vite&theme=dark"/><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,js,ts,react,vite&theme=light"/><img src="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,js,ts,react,vite&theme=dark" alt="Languages and frontend"/></picture><br/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi,flask,sqlite,docker,linux,git,github,githubactions,vscode&theme=dark"/><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=fastapi,flask,sqlite,docker,linux,git,github,githubactions,vscode&theme=light"/><img src="https://skillicons.dev/icons?i=fastapi,flask,sqlite,docker,linux,git,github,githubactions,vscode&theme=dark" alt="Backend and tools"/></picture>
 </p>
 
-<p align="center"><img src="./assets/stack.svg" alt="LangChain, LangGraph, LangSmith, CrewAI, RAG, ChromaDB, Mistral AI, Groq, OpenAI, Guardrails, LLMOps, Streamlit, FastAPI, Playwright, pytest and more" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stack.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg"/><img src="./assets/stack.svg" alt="LangChain, LangGraph, LangSmith, CrewAI, RAG, ChromaDB, Mistral AI, Groq, OpenAI, Guardrails, LLMOps, Streamlit, FastAPI, Playwright, pytest and more" width="100%"/></picture></p>
 
 | Area | Skills |
 |---|---|
@@ -145,7 +144,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | **Testing & DevOps** | Playwright, pytest, GitHub Actions, Docker, Git, Linux |
 | **Security & product** | CTFs, secure AI design, PRDs, RICE prioritisation, product teardowns |
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## Experience
 
@@ -176,17 +175,17 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 
 `Advanced agentic AI` · `Multi-agent orchestration` · `LLMOps & evaluation` · `Deep learning` · `Cloud & Docker`
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## GitHub activity
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Prashasthi-18&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=22D3EE" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Prashasthi-18&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA" alt="Top languages"/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Prashasthi-18&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=22D3EE"/><source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Prashasthi-18&show_icons=true&include_all_commits=true&count_private=true&theme=default&hide_border=false&border_color=E4E0FB&title_color=7C3AED&icon_color=0891B2&text_color=1F2937"/><img src="https://github-readme-stats.vercel.app/api?username=Prashasthi-18&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=22D3EE" height="170"  alt="GitHub stats"/></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Prashasthi-18&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA"/><source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Prashasthi-18&layout=compact&langs_count=8&theme=default&hide_border=false&border_color=E4E0FB&title_color=7C3AED&text_color=1F2937"/><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Prashasthi-18&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA" height="170"  alt="Top languages"/></picture>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Prashasthi-18&theme=tokyonight&hide_border=true&background=0D1117&ring=A78BFA&fire=22D3EE&currStreakLabel=A78BFA" alt="GitHub streak"/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Prashasthi-18&theme=tokyonight&hide_border=true&background=0D1117&ring=A78BFA&fire=22D3EE&currStreakLabel=A78BFA"/><source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=Prashasthi-18&theme=default&hide_border=false&border=E4E0FB&ring=7C3AED&fire=0891B2&currStreakLabel=7C3AED"/><img src="https://streak-stats.demolab.com?user=Prashasthi-18&theme=tokyonight&hide_border=true&background=0D1117&ring=A78BFA&fire=22D3EE&currStreakLabel=A78BFA" alt="GitHub streak"/></picture>
 </p>
 
 <p align="center">
@@ -197,7 +196,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
   </picture>
 </p>
 
-<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
 
 ## Let's connect
 
@@ -208,4 +207,4 @@ I'm always happy to talk about agentic AI, RAG, AI for testing, security or prod
   <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Say-Hello-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"/></a>
 </p>
 
-<p align="center"><img src="./assets/footer.svg" alt="Let's build something intelligent." width="100%"/></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/footer.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg"/><img src="./assets/footer.svg" alt="Let's build something intelligent." width="100%"/></picture></p>
