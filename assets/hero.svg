@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Boin Prashasthi - Aspiring AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0b1f"/>
+      <stop offset="1" stop-color="#05060d"/>
+    </linearGradient>
+    <radialGradient id="violet"><stop offset="0" stop-color="#7c3aed" stop-opacity=".6"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cyan"><stop offset="0" stop-color="#06b6d4" stop-opacity=".45"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <radialGradient id="indigo"><stop offset="0" stop-color="#4f46e5" stop-opacity=".5"/><stop offset="1" stop-color="#4f46e5" stop-opacity="0"/></radialGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#a78bfa"/><stop offset="1" stop-color="#4f46e5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
+      <stop offset="0" stop-color="#e9d5ff"/>
+      <stop offset=".35" stop-color="#a78bfa"/>
+      <stop offset=".7" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;600 0;0 0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+    <radialGradient id="gridfade" cx=".72" cy=".5" r=".6">
+      <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1200" height="360" fill="url(#gridfade)"/></mask>
+    <clipPath id="card"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Segoe UI', Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .rise { animation: rise 1s cubic-bezier(.2, .8, .2, 1) backwards; }
+    .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .55s; } .d4 { animation-delay: .75s; } .d5 { animation-delay: .95s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .blob { transform-box: fill-box; transform-origin: center; animation: drift 16s ease-in-out infinite alternate; }
+    .b2 { animation-duration: 21s; animation-delay: -6s; }
+    .b3 { animation-duration: 25s; animation-delay: -11s; }
+    @keyframes drift { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(60px, 24px) scale(1.12); } 100% { transform: translate(-40px, 40px) scale(.95); } }
+    .link { stroke-dasharray: 3 7; animation: flow 1.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -20; } }
+    .pill { animation: glow 6s ease-in-out infinite; }
+    .p1 { animation-delay: 0s; } .p2 { animation-delay: 1s; } .p3 { animation-delay: 2s; } .p4 { animation-delay: 3s; } .p5 { animation-delay: 4s; } .p6 { animation-delay: 5s; }
+    @keyframes glow { 0%, 22%, 100% { stroke: #2e2a55; } 8% { stroke: #a78bfa; } }
+    .star { animation: twinkle 3s ease-in-out infinite; }
+    @keyframes twinkle { 0%, 100% { opacity: .15; } 50% { opacity: .9; } }
+    .border { stroke-dasharray: 160 2740; animation: run 9s linear infinite; }
+    @keyframes run { to { stroke-dashoffset: -2900; } }
+    .caret { animation: blink 1s steps(2) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <ellipse class="blob" cx="180" cy="40" rx="320" ry="220" fill="url(#violet)"/>
+    <ellipse class="blob b2" cx="1080" cy="60" rx="300" ry="220" fill="url(#cyan)"/>
+    <ellipse class="blob b3" cx="760" cy="380" rx="340" ry="200" fill="url(#indigo)"/>
+    <rect width="1200" height="360" fill="url(#grid)" mask="url(#gridmask)"/>
+
+    <!-- stars -->
+    <g fill="#e0e7ff">
+      <circle class="star" cx="560" cy="44" r="1.2" style="animation-delay:-.4s"/>
+      <circle class="star" cx="640" cy="300" r="1" style="animation-delay:-1.2s"/>
+      <circle class="star" cx="1150" cy="300" r="1.4" style="animation-delay:-2.1s"/>
+      <circle class="star" cx="700" cy="120" r="1" style="animation-delay:-.9s"/>
+      <circle class="star" cx="1160" cy="40" r="1.1" style="animation-delay:-1.7s"/>
+      <circle class="star" cx="610" cy="200" r="1.3" style="animation-delay:-2.6s"/>
+      <circle class="star" cx="460" cy="320" r="1" style="animation-delay:-.2s"/>
+      <circle class="star" cx="1110" cy="190" r="1" style="animation-delay:-1.4s"/>
+      <circle class="star" cx="40" cy="320" r="1.2" style="animation-delay:-2.3s"/>
+      <circle class="star" cx="520" cy="250" r="1" style="animation-delay:-.7s"/>
+    </g>
+
+    <!-- left: identity -->
+    <g class="sans">
+      <g class="rise d1">
+        <rect x="70" y="70" width="248" height="30" rx="15" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".14"/>
+        <circle cx="90" cy="85" r="4" fill="#34d399">
+          <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="fill-opacity" values="1;.5;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="104" y="90" class="mono" font-size="12.5" fill="#c4b5fd" letter-spacing="1.5">AI ENGINEER IN THE MAKING</text>
+      </g>
+      <text class="rise d2" x="66" y="168" font-size="66" font-weight="700" letter-spacing="-2" fill="url(#shine)">Boin Prashasthi</text>
+      <text class="rise d3" x="70" y="212" font-size="22" font-weight="500" fill="#e5e7eb">Agentic AI <tspan fill="#6b7280">·</tspan> RAG <tspan fill="#6b7280">·</tspan> LLMOps <tspan fill="#6b7280">·</tspan> AI for QA</text>
+      <text class="rise d4" x="70" y="246" font-size="16" fill="#9ca3af">B.Tech CSE (Cyber Security) · VNR VJIET</text>
+      <g class="rise d5">
+        <text x="70" y="296" class="mono" font-size="14" fill="#6b7280">&gt; <tspan fill="#a78bfa">building</tspan> <tspan fill="#e5e7eb">AI that plans, retrieves, reasons and ships</tspan></text>
+        <rect class="caret" x="548" y="284" width="8" height="15" fill="#22d3ee"/>
+      </g>
+    </g>
+
+    <!-- right: agent constellation -->
+    <g>
+      <circle cx="930" cy="180" r="150" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-dasharray="2 10">
+        <animateTransform attributeName="transform" type="rotate" from="0 930 180" to="360 930 180" dur="60s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="930" cy="180" r="95" fill="none" stroke="#a78bfa" stroke-opacity=".15">
+        <animateTransform attributeName="transform" type="rotate" from="360 930 180" to="0 930 180" dur="40s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="930" cy="85" r="3" fill="#a78bfa">
+        <animateTransform attributeName="transform" type="rotate" from="0 930 180" to="360 930 180" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="930" cy="30" r="2.5" fill="#22d3ee">
+        <animateTransform attributeName="transform" type="rotate" from="360 930 180" to="0 930 180" dur="20s" repeatCount="indefinite"/>
+      </circle>
+
+      <g stroke="url(#edge)" stroke-width="1.5" stroke-opacity=".55" fill="none">
+        <path class="link" d="M930 180 L930 62"/>
+        <path class="link" d="M930 180 L1070 120"/>
+        <path class="link" d="M930 180 L1070 240"/>
+        <path class="link" d="M930 180 L930 298"/>
+        <path class="link" d="M930 180 L790 240"/>
+        <path class="link" d="M930 180 L790 120"/>
+      </g>
+
+      <!-- data packets -->
+      <g fill="#ffffff">
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L930 62" begin="0s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="0s"/></circle>
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L1070 120" begin="-.5s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="-.5s"/></circle>
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L1070 240" begin="-1s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="-1s"/></circle>
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L930 298" begin="-1.5s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="-1.5s"/></circle>
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L790 240" begin="-2s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="-2s"/></circle>
+        <circle r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M930 180 L790 120" begin="-2.5s"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="-2.5s"/></circle>
+      </g>
+
+      <!-- core -->
+      <circle cx="930" cy="180" r="46" fill="url(#core)" opacity=".55">
+        <animate attributeName="r" values="40;54;40" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="930" cy="180" r="28" fill="#120f2b" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="930" y="185" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#e9d5ff">LLM</text>
+
+      <!-- nodes -->
+      <g class="sans" font-size="13" font-weight="600" fill="#e5e7eb" text-anchor="middle">
+        <rect class="pill p1" x="882" y="46" width="96" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="930" y="67">Agents</text>
+        <rect class="pill p2" x="1022" y="104" width="96" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="1070" y="125">RAG</text>
+        <rect class="pill p3" x="1016" y="224" width="108" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="1070" y="245">Guardrails</text>
+        <rect class="pill p4" x="882" y="282" width="96" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="930" y="303">Evals</text>
+        <rect class="pill p5" x="742" y="224" width="96" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="790" y="245">LLMOps</text>
+        <rect class="pill p6" x="742" y="104" width="96" height="32" rx="16" fill="#120f2b" stroke="#2e2a55" stroke-width="1.5"/>
+        <text x="790" y="125">AI for QA</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- card border with a travelling highlight -->
+  <rect x=".75" y=".75" width="1198.5" height="358.5" rx="23.5" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5"/>
+  <rect class="border" x=".75" y=".75" width="1198.5" height="358.5" rx="23.5" fill="none" stroke="url(#edge)" stroke-width="2" pathLength="2900"/>
+</svg>

@@ -1,26 +1,21 @@
-<!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:4f46e5,100:06b6d4&height=220&section=header&text=Hi,%20I'm%20Prashasthi&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Aspiring%20AI%20Engineer%20%E2%80%A2%20Agentic%20AI%20%E2%80%A2%20LLM%20Apps&descSize=18&descAlignY=58&animation=fadeIn" alt="Hi, I'm Prashasthi" width="100%"/>
+  <img src="./assets/hero.svg" alt="Boin Prashasthi · Aspiring AI Engineer · Agentic AI, RAG, LLMOps, AI for QA" width="100%"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Prashasthi-18">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=B.Tech+CSE+(Cyber+Security)+student+%40+VNR+VJIET;Building+multi-agent+systems+with+LangGraph+%26+CrewAI;RAG+%E2%80%A2+LLMOps+%E2%80%A2+Guardrails+%E2%80%A2+AI+for+QA;CTF+winner+%E2%80%A2+10%2B+hackathons+%E2%80%A2+Product-minded+builder" alt="Typing intro"/>
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=760&lines=Building+multi-agent+systems+with+LangGraph+%26+CrewAI;Shipping+RAG+apps+people+can+actually+use;Making+AI+safe+with+guardrails+%26+human-in-the-loop;Turning+requirements+into+tested+software+with+AI" alt="What I build"/>
 </p>
 
 <p align="center">
+  <a href="https://www.linkedin.com/in/prashasthiboin/"><img src="https://img.shields.io/badge/LinkedIn-prashasthiboin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Email-boinprashasthi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <!-- LinkedIn: replace YOUR-LINK and uncomment
-  <a href="https://linkedin.com/in/YOUR-LINK"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  -->
   <!-- Portfolio: replace YOUR_PORTFOLIO_LINK and uncomment
   <a href="YOUR_PORTFOLIO_LINK"><img src="https://img.shields.io/badge/Portfolio-Visit-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
   -->
   <img src="https://komarev.com/ghpvc/?username=Prashasthi-18&style=for-the-badge&color=7c3aed&label=Profile+views" alt="Profile views"/>
 </p>
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 👩‍💻 About me
 
@@ -33,7 +28,9 @@ I'm **Boin Prashasthi**, a **B.Tech CSE (Cyber Security)** student at **VNR VJIE
 - 🔐 Cyber security background, with a **CTF win** and 7+ CTF competitions
 - 📊 Product-minded: I write **PRDs and product teardowns**, and I like building user-centric AI products
 
----
+<p align="center"><img src="./assets/pipeline.svg" alt="How I build: Understand, Retrieve, Reason, Guard, Ship" width="100%"/></p>
+
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 🚀 Featured projects
 
@@ -130,7 +127,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 
 </details>
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 🛠️ Tech stack
 
@@ -164,7 +161,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | **Testing & DevOps** | Playwright, pytest, GitHub Actions, Docker, Git, Linux |
 | **Security & product** | CTFs, secure AI design, PRDs, RICE prioritisation, product teardowns |
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 💼 Experience
 
@@ -173,7 +170,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 - Building AI agents and RAG pipelines
 - Working on production-ready AI systems, model evaluation and workflow orchestration
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 🏆 Achievements
 
@@ -191,13 +188,13 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | Introduction to Generative AI | IBM SkillsBuild |
 | What is Product Management? | Simplilearn |
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 🌱 Currently learning
 
 `Advanced agentic AI` · `Multi-agent orchestration` · `LLMOps & evaluation` · `Deep learning` · `Cloud & Docker`
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 📊 GitHub stats
 
@@ -218,12 +215,17 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
   </picture>
 </p>
 
----
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
 
 ## 🤝 Let's connect
 
-I'm always happy to talk about **agentic AI, RAG, AI for testing, security or product ideas**, and to team up on projects and hackathons. Email me at **[boinprashasthi@gmail.com](mailto:boinprashasthi@gmail.com)**.
+I'm always happy to talk about **agentic AI, RAG, AI for testing, security or product ideas**, and to team up on projects and hackathons.
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:4f46e5,100:7c3aed&height=120&section=footer" alt="" width="100%"/>
+  <a href="https://www.linkedin.com/in/prashasthiboin/"><img src="https://img.shields.io/badge/Connect_on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"/></a>
+  <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Say-Hello-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"/></a>
 </p>
+
+<p align="center"><img src="./assets/divider.svg" alt="" width="100%"/></p>
+
+<p align="center"><sub>Thanks for stopping by ✨</sub></p>
