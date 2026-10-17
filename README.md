@@ -130,7 +130,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 ## Tech stack
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjava%2Chtml%2Ccss%2Cjs%2Cts%2Creact%2Cvite&theme=dark"/><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjava%2Chtml%2Ccss%2Cjs%2Cts%2Creact%2Cvite&theme=light"/><img src="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,js,ts,react,vite&theme=dark" alt="Languages and frontend"/></picture><br/>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjava%2Chtml%2Ccss%2Creact%2Cvite&theme=dark"/><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cc%2Ccpp%2Cjava%2Chtml%2Ccss%2Creact%2Cvite&theme=light"/><img src="https://skillicons.dev/icons?i=py,c,cpp,java,html,css,react,vite&theme=dark" alt="Languages and frontend"/></picture><br/>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=fastapi%2Cflask%2Csqlite%2Cdocker%2Clinux%2Cgit%2Cgithub%2Cgithubactions%2Cvscode&theme=dark"/><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=fastapi%2Cflask%2Csqlite%2Cdocker%2Clinux%2Cgit%2Cgithub%2Cgithubactions%2Cvscode&theme=light"/><img src="https://skillicons.dev/icons?i=fastapi,flask,sqlite,docker,linux,git,github,githubactions,vscode&theme=dark" alt="Backend and tools"/></picture>
 </p>
 
@@ -139,9 +139,9 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | Area | Skills |
 |---|---|
 | **AI / ML** | Generative AI, agentic AI, multi-agent systems, LLMs, RAG, prompt engineering, guardrails, LLM evaluation, LLMOps, machine learning |
-| **Languages** | Python, C, C++, Java, SQL, JavaScript, TypeScript, HTML, CSS |
+| **Languages** | Python, C, C++, Java, SQL, HTML, CSS |
 | **Backend & data** | FastAPI, Flask, SQLite, REST APIs, Server-Sent Events, Pandas, NumPy |
-| **Testing & DevOps** | Playwright, pytest, GitHub Actions, Docker, Git, Linux |
+| **Testing & DevOps** | Playwright, pytest, GitHub Actions, GitLab CI/CD, Docker, Git, Linux |
 | **Security & product** | CTFs, secure AI design, PRDs, RICE prioritisation, product teardowns |
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/divider.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg"/><img src="./assets/divider.svg" alt="" width="100%"/></picture></p>
@@ -159,7 +159,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 |---|---|
 | **Winner** | Room Style CTF Cyber Security Competition |
 | **7+** | Capture the Flag competitions |
-| **10+** | Hackathons |
+| **20+** | Hackathons |
 | **Published** | Product management case studies on Notion |
 
 ## Certifications
@@ -170,6 +170,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | Agentic AI using LangChain, LangGraph, CrewAI & AutoGen | IBM SkillsBuild |
 | Introduction to Generative AI | IBM SkillsBuild |
 | What is Product Management? | Simplilearn |
+| GitLab CI/CD Pipelines for Beginners | Udemy |
 
 ## Currently learning
 
