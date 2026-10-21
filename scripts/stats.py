@@ -125,7 +125,7 @@ def odometer(value, x, baseline, size, fill, begin=0.3):
 
 
 def render(t, data):
-    W, H = 1200, 330
+    W, H = 1200, 344
     current, longest = streaks(data["days"])
     total = f"{data['total']:,}"
 
@@ -166,7 +166,7 @@ def render(t, data):
     counts = [c for _, c in data["days"]]
     weeks = [sum(counts[i:i + 7]) for i in range(0, len(counts), 7)]
     peak = max(weeks) or 1
-    gx, gw, gy, gh = 28, W - 56, 300, 56
+    gx, gw, gy, gh = 28, W - 56, 326, 58
     pts = [(gx + gw * i / max(len(weeks) - 1, 1), gy - gh * w / peak) for i, w in enumerate(weeks)]
     line = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
     area = line + f" L{pts[-1][0]:.1f} {gy} L{pts[0][0]:.1f} {gy} Z"
