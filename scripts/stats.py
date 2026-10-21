@@ -131,7 +131,7 @@ def render(t, data):
 
     # left: headline number and four small metrics
     metrics = [("Current streak", f"{current} days"), ("Longest streak", f"{longest} days"),
-               ("Pull requests", f"{data['prs']:,}"), ("Public repos", f"{data['repos']:,}")]
+               ("Commits", f"{data['commits']:,}"), ("Public repos", f"{data['repos']:,}")]
     m_svg = []
     for i, (label, value) in enumerate(metrics):
         x = 28 + (i % 2) * 260
@@ -144,9 +144,9 @@ def render(t, data):
     langs = sorted(data["langs"].items(), key=lambda kv: -kv[1])
     top = langs[:6]
     other = sum(v for _, v in langs[6:])
-    if other:
+    whole = sum(v for _, v in langs) or 1
+    if other / whole >= 0.005:
         top.append(("Other", other))
-    whole = sum(v for _, v in top) or 1
     bx, bw, by = 620, 552, 66
     segs, legend, x = [], [], bx
     for i, (name, size) in enumerate(top):
@@ -207,7 +207,7 @@ def render(t, data):
 """
     lang_text = ", ".join(f"{n} {100 * s / whole:.0f}%" for n, s in top)
     label = (f"{data['total']} contributions in the last year; current streak {current} days; longest streak "
-             f"{longest} days; {data['prs']} pull requests; {data['repos']} public repos. Languages: {lang_text}.")
+             f"{longest} days; {data['commits']} commits; {data['repos']} public repos. Languages: {lang_text}.")
     return svg(W, H, body, label)
 
 
