@@ -227,4 +227,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        # Surface the cause as a workflow annotation; the step is allowed to fail.
+        print(f"::warning title=Activity card failed::{type(exc).__name__}: {exc}")
+        raise
