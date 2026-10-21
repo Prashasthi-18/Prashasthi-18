@@ -92,11 +92,11 @@ Driven by curiosity and a strong interest in software development, I enjoy under
 </details>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/h-stack.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/h-stack-light.svg"/><img src="./assets/h-stack.svg" alt="Tech stack" width="100%"/></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/h-skills.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/h-skills-light.svg"/><img src="./assets/h-skills.svg" alt="Technical skills" width="100%"/></picture>
 </p>
 
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/stack.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg"/><img src="./assets/stack.svg" alt="Tech stack: Python, Java, C, C++, SQL, JavaScript, FastAPI, Flask, Node.js, Express.js, PostgreSQL, SQLite, ChromaDB, Docker, Linux, GitHub Actions, GitLab CI/CD, pytest, Playwright, LangChain, LangGraph, CrewAI, RAG" width="100%"/></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/skills.svg"/><source media="(prefers-color-scheme: light)" srcset="./assets/skills-light.svg"/><img src="./assets/skills.svg" alt="Technical skills, as layers a request passes through. Languages: Python, Java, C, C++, SQL, JavaScript. Backend and APIs: FastAPI, Flask, Node.js, Express.js, REST APIs, JWT, OAuth, Server-Sent Events. Data: PostgreSQL, SQLite, ChromaDB, Pandas, NumPy, scikit-learn. AI and LLMs: LangChain, LangGraph, CrewAI, RAG, multi-agent systems, guardrails. Ship and test: Docker, Linux, Git, GitHub Actions, GitLab CI/CD, pytest, Playwright" width="100%"/></picture>
 </p>
 
 <details>

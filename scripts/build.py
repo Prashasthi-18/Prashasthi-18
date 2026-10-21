@@ -277,7 +277,7 @@ HEADERS = {
     "experience": ("briefcase", "Experience & education", "git log --author=prashasthi"),
     "projects": ("code", "Software engineering projects", "pinned"),
     "ai": ("sparkle", "AI & LLM applications", "agents · rag · llmops"),
-    "stack": ("stack", "Tech stack", "requirements.txt"),
+    "skills": ("stack", "Technical skills", "one request, end to end"),
     "achievements": ("trophy", "Achievements & certifications", "releases"),
     "activity": ("graph", "GitHub activity", "insights"),
     "connect": ("mail", "Let's connect", "open an issue, say hi"),
@@ -623,56 +623,110 @@ def card(t, key, index):
     return svg(W, H, body, f"{name}: {desc}", css)
 
 
-# --------------------------------------------------------------------- tech stack
+# --------------------------------------------------------------- technical skills
 
-STACK = [
-    ("Languages", [("Python", LANG["Python"]), ("Java", LANG["Java"]), ("C", LANG["C"]), ("C++", LANG["C++"]),
-                   ("SQL", LANG["SQL"]), ("JavaScript", LANG["JavaScript"]), ("HTML", LANG["HTML"]), ("CSS", "#8e5cd9")]),
-    ("Backend", [("FastAPI", "#05998b"), ("Flask", "#9aa5b1"), ("Node.js", "#5fa04e"), ("Express.js", "#9aa5b1"),
-                 ("REST APIs", "#4493f8"), ("JWT · OAuth", "#d63aff"), ("Server-Sent Events", "#e38c00")]),
-    ("Data", [("PostgreSQL", "#4169e1"), ("SQLite", "#0f80cc"), ("ChromaDB", "#ff6446"), ("Pandas", "#e70488"),
-              ("NumPy", "#4dabcf"), ("scikit-learn", "#f7931e")]),
-    ("DevOps & QA", [("Docker", "#2496ed"), ("Linux", "#fcc624"), ("Git", "#f05032"), ("GitHub Actions", "#2088ff"),
-                     ("GitLab CI/CD", "#fc6d26"), ("pytest", "#0a9edc"), ("Playwright", "#2ead33")]),
-    ("AI / LLMs", [("LangChain", "#1fa37a"), ("LangGraph", "#7c6cff"), ("CrewAI", "#ff5a50"), ("RAG", "#a371f7"),
-                   ("Multi-agent systems", "#d2a8ff"), ("Guardrails", "#3fb950"), ("Streamlit", "#ff4b4b")]),
+LAYERS = [
+    ("Languages", ["Python", "Java", "C", "C++", "SQL", "JavaScript"]),
+    ("Backend & APIs", ["FastAPI", "Flask", "Node.js", "Express.js", "REST APIs", "JWT · OAuth", "Server-Sent Events"]),
+    ("Data", ["PostgreSQL", "SQLite", "ChromaDB", "Pandas", "NumPy", "scikit-learn"]),
+    ("AI / LLMs", ["LangChain", "LangGraph", "CrewAI", "RAG", "Multi-agent systems", "Guardrails"]),
+    ("Ship & test", ["Docker", "Linux", "Git", "GitHub Actions", "GitLab CI/CD", "pytest", "Playwright"]),
+]
+
+# Each trace is one request moving through the layers: (method, route, ms, node per layer).
+TRACES = [
+    ("POST", "/api/agents/run", 184, ["Python", "FastAPI", "PostgreSQL", "LangGraph", "Docker"]),
+    ("GET", "/api/videos/ask", 96, ["Python", "REST APIs", "ChromaDB", "RAG", "GitHub Actions"]),
+    ("POST", "/api/invoices/match", 142, ["Python", "Flask", "SQLite", "Guardrails", "pytest"]),
+    ("POST", "/api/tests/generate", 231, ["JavaScript", "Node.js", "Pandas", "CrewAI", "Playwright"]),
+    ("GET", "/api/upgrades/impact", 77, ["SQL", "JWT · OAuth", "PostgreSQL", "LangChain", "GitLab CI/CD"]),
 ]
 
 
-def stack(t):
-    W = 1200
-    pad, label_w, row_h, pill_h = 28, 150, 52, 34
-    H = pad * 2 + len(STACK) * row_h - (row_h - pill_h)
-    parts, n = [], 0
-    for r, (label, items) in enumerate(STACK):
-        y = pad + r * row_h
-        parts.append(f'<text x="{pad}" y="{y + 22}" class="mono" font-size="12" letter-spacing="1" fill="{t["faint"]}">{esc(label.upper())}</text>')
-        x = pad + label_w
-        for name, color in items:
-            w = text_width(name, 13.5) + 44
-            parts.append(
-                f'<g class="rise" style="animation-delay:{.05 * n:.2f}s">'
-                f'<rect x="{x:.0f}" y="{y}" width="{w:.0f}" height="{pill_h}" rx="{pill_h / 2}" fill="{t["canvas"]}" stroke="{t["border"]}"/>'
-                f'<rect class="glow" style="animation-delay:{.42 * n:.2f}s" x="{x:.0f}" y="{y}" width="{w:.0f}" height="{pill_h}" rx="{pill_h / 2}" '
-                f'fill="{t["accent"]}" fill-opacity=".08" stroke="{t["accent"]}"/>'
-                f'<circle cx="{x + 18:.0f}" cy="{y + pill_h / 2}" r="5" fill="{color}"/>'
-                f'<text x="{x + 31:.0f}" y="{y + 22}" font-size="13.5" font-weight="500" fill="{t["fg"]}">{esc(name)}</text></g>'
+def skills(t):
+    W, pad, gap = 1200, 28, 40
+    cw = (W - 2 * pad - gap * (len(LAYERS) - 1)) / len(LAYERS)
+    top, step, nh = 74, 38, 30
+    rows = max(len(items) for _, items in LAYERS)
+    bar_y = top + rows * step + 14
+    H = bar_y + 58
+    slot = 4.0
+    total = slot * len(TRACES)
+
+    def node_pos(col, name):
+        r = LAYERS[col][1].index(name)
+        x = pad + col * (cw + gap)
+        return x, top + r * step
+
+    heads, nodes = [], []
+    for c, (label, items) in enumerate(LAYERS):
+        x = pad + c * (cw + gap)
+        heads.append(
+            f'<text x="{x:.0f}" y="{top - 22}" class="mono" font-size="11.5" letter-spacing="1" fill="{t["faint"]}">'
+            f'<tspan fill="{t["accent"]}">{c + 1:02d}</tspan>  {esc(label.upper())}</text>'
+        )
+        for r, name in enumerate(items):
+            y = top + r * step
+            nodes.append(
+                f'<rect x="{x:.0f}" y="{y}" width="{cw:.0f}" height="{nh}" rx="6" fill="{t["canvas"]}" stroke="{t["border"]}"/>'
+                f'<text x="{x + 14:.0f}" y="{y + 19.5}" font-size="13.5" fill="{t["muted"]}">{esc(name)}</text>'
             )
-            x += w + 10
-            n += 1
-    loop = .42 * n
+
+    routes, lit, bars = [], [], []
+    for i, (method, path, ms, hops) in enumerate(TRACES):
+        s = i * slot
+        draw_s, draw_e, end = s + .2, s + 1.8, s + slot - .35
+        pts = [node_pos(c, name) for c, name in enumerate(hops)]
+        x0, y0 = pts[0]
+        d = f"M{x0 + cw:.0f} {y0 + nh / 2}"
+        for (xa, ya), (xb, yb) in zip(pts, pts[1:]):
+            ya, yb = ya + nh / 2, yb + nh / 2
+            d += f"C{xa + cw + gap / 2:.0f} {ya} {xb - gap / 2:.0f} {yb} {xb:.0f} {yb}H{xb + cw:.0f}"
+        routes.append(
+            f'<g opacity="0">{window_opacity(draw_s - .05, end, total, fade=.3)}'
+            f'<path d="{d}" fill="none" stroke="{t["accent"]}" stroke-width="2" stroke-linecap="round" pathLength="1" '
+            f'stroke-dasharray="1 1" stroke-dashoffset="1">{draw_line(draw_s, draw_e, total, total)}</path>'
+            f'<g opacity="0">{window_opacity(draw_e, end, total, fade=.2)}'
+            + "".join(
+                f'<circle r="2.6" fill="{t["accent_soft"]}"><animateMotion path="{d}" dur="1.5s" '
+                f'begin="{-k * .5:.1f}s" repeatCount="indefinite"/></circle>' for k in range(3)
+            )
+            + "</g></g>"
+        )
+        for c, (x, y) in enumerate(pts):
+            tc = draw_s + c * (draw_e - draw_s) / (len(pts) - 1) - .05
+            lit.append(
+                f'<g opacity="0">{window_opacity(max(tc, .01), end, total, fade=.15)}'
+                f'<rect x="{x:.0f}" y="{y}" width="{cw:.0f}" height="{nh}" rx="6" fill="{t["accent"]}" fill-opacity=".1" '
+                f'stroke="{t["accent"]}"/>'
+                f'<text x="{x + 14:.0f}" y="{y + 19.5}" font-size="13.5" font-weight="600" fill="{t["fg"]}">{esc(hops[c])}</text>'
+                f'<circle cx="{x + cw - 14:.0f}" cy="{y + nh / 2}" r="3" fill="{t["accent"]}"/></g>'
+            )
+        chain = f' <tspan fill="{t["faint"]}">→</tspan> '.join(esc(h) for h in hops)
+        bars.append(
+            f'<g opacity="0">{window_opacity(draw_s, end, total, fade=.25)}'
+            f'<text x="{pad + 16}" y="{bar_y + 27}" class="mono" font-size="12.5" fill="{t["fg"]}">'
+            f'<tspan fill="{t["accent"]}" font-weight="600">{method}</tspan> {esc(path)}</text>'
+            f'<text x="{pad + 250}" y="{bar_y + 27}" font-size="13" fill="{t["muted"]}">{chain}</text>'
+            f'<g opacity="0">{window_opacity(draw_e, end, total, fade=.2)}'
+            f'<rect x="{W - pad - 150}" y="{bar_y + 13}" width="64" height="20" rx="10" fill="{t["green"]}" fill-opacity=".14"/>'
+            f'<text x="{W - pad - 118}" y="{bar_y + 27}" text-anchor="middle" class="mono" font-size="11.5" fill="{t["green"]}">200 OK</text>'
+            f'<text x="{W - pad - 16}" y="{bar_y + 27}" text-anchor="end" class="mono" font-size="12" fill="{t["muted"]}">{ms} ms</text>'
+            f'</g></g>'
+        )
+
     body = f"""
 <g class="sans">
   <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="{t['subtle']}" stroke="{t['border']}"/>
-  {''.join(parts)}
+  {''.join(heads)}
+  {''.join(routes)}
+  {''.join(nodes)}
+  {''.join(lit)}
+  <rect x="{pad}" y="{bar_y}" width="{W - 2 * pad}" height="44" rx="8" fill="{t['canvas']}" stroke="{t['border']}"/>
+  {''.join(bars)}
 </g>"""
-    pct = 100 * 1.4 / loop
-    css = f"""
-    .glow {{ opacity: 0; animation: glow {loop:.2f}s ease-in-out infinite; }}
-    @keyframes glow {{ 0% {{ opacity: 0; }} {pct / 2:.2f}% {{ opacity: 1; }} {pct:.2f}%, 100% {{ opacity: 0; }} }}
-    """
-    names = ", ".join(name for _, items in STACK for name, _ in items)
-    return svg(W, H, body, f"Tech stack: {names}", css)
+    names = "; ".join(f"{label}: {', '.join(items)}" for label, items in LAYERS)
+    return svg(W, H, body, f"Technical skills. {names}")
 
 
 # ------------------------------------------------------------------- achievements
@@ -852,7 +906,7 @@ def main():
         write("pipeline", t, pipeline(t))
         for i, key in enumerate(PROJECTS):
             write(f"card-{key}", t, card(t, key, i))
-        write("stack", t, stack(t))
+        write("skills", t, skills(t))
         write("achievements", t, achievements(t))
         for key in BUTTONS:
             write(key, t, button(t, key))

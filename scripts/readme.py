@@ -123,9 +123,9 @@ Driven by curiosity and a strong interest in software development, I enjoy under
 
 </details>
 
-{header('stack', 'Tech stack')}
+{header('skills', 'Technical skills')}
 
-{center(pic('stack', 'Tech stack: Python, Java, C, C++, SQL, JavaScript, FastAPI, Flask, Node.js, Express.js, PostgreSQL, SQLite, ChromaDB, Docker, Linux, GitHub Actions, GitLab CI/CD, pytest, Playwright, LangChain, LangGraph, CrewAI, RAG'))}
+{center(pic('skills', 'Technical skills, as layers a request passes through. Languages: Python, Java, C, C++, SQL, JavaScript. Backend and APIs: FastAPI, Flask, Node.js, Express.js, REST APIs, JWT, OAuth, Server-Sent Events. Data: PostgreSQL, SQLite, ChromaDB, Pandas, NumPy, scikit-learn. AI and LLMs: LangChain, LangGraph, CrewAI, RAG, multi-agent systems, guardrails. Ship and test: Docker, Linux, Git, GitHub Actions, GitLab CI/CD, pytest, Playwright'))}
 
 <details>
 <summary><b>Skills as text</b></summary>
