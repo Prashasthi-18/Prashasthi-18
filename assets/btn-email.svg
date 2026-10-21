@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134" height="44" viewBox="0 0 134 44" role="img" aria-label="Email me">
+<title>Email me</title>
+<style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+    .sheen { animation: sheen 5s ease-in-out infinite; animation-delay: 1.2s; }
+    @keyframes sheen { 0% { transform: skewX(-20deg) translateX(0); } 40%, 100% { transform: skewX(-20deg) translateX(294px); } }
+    </style>
+
+<defs>
+  <clipPath id="c"><rect x="1" y="1" width="132" height="42" rx="8"/></clipPath>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="sans">
+  <rect x=".5" y=".5" width="133" height="43" rx="8" fill="#161b22" stroke="#30363d"/>
+  <g clip-path="url(#c)"><rect class="sheen" x="-80" y="0" width="60" height="44" fill="url(#sheen)" transform="skewX(-20)"/></g>
+  <g transform="translate(18 13) scale(0.9)" fill="none" stroke="#e6edf3" stroke-width="1.77778" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4.5" width="16" height="11" rx="2"/><path d="m2.5 5.5 7.5 5.5 7.5-5.5"/></g>
+  <text x="46" y="27.5" font-size="14" font-weight="600" fill="#e6edf3">Email me</text>
+</g>
+</svg>

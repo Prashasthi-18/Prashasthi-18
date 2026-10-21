@@ -1,72 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="How I build: Design, Build, Integrate, Test, Ship">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#0891b2"/></linearGradient>
-    <clipPath id="card"><rect width="1200" height="190" rx="20"/></clipPath>
-  </defs>
-  <style>
-    .sans { font-family: 'Segoe UI', Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
-    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-    .box { stroke: #e4e0fb; animation: lit 7.5s ease-in-out infinite; }
-    .s1 { animation-delay: 0s; } .s2 { animation-delay: 1.5s; } .s3 { animation-delay: 3s; } .s4 { animation-delay: 4.5s; } .s5 { animation-delay: 6s; }
-    @keyframes lit { 0%, 24%, 100% { stroke: #e4e0fb; fill: #ffffff; } 8% { stroke: #7c3aed; fill: #f3efff; } }
-    .ico { animation: pop 7.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    @keyframes pop { 0%, 24%, 100% { transform: scale(1); } 8% { transform: scale(1.18); } }
-    .wire { stroke-dasharray: 3 6; animation: flow 1.2s linear infinite; }
-    @keyframes flow { to { stroke-dashoffset: -18; } }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="232" viewBox="0 0 1200 232" role="img" aria-label="How I build, as a CI workflow: Design, Build, Integrate, Test, Ship.">
+<title>How I build, as a CI workflow: Design, Build, Integrate, Test, Ship.</title>
+<style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="190" fill="url(#bg)"/>
-    <text x="40" y="38" class="mono" font-size="12.5" fill="#7c3aed" letter-spacing="2">HOW I BUILD</text>
-    <text x="1160" y="38" class="mono" font-size="12.5" fill="#6b7280" text-anchor="end" letter-spacing="1">idea → reliable, tested software</text>
-
-    <!-- wires -->
-    <g stroke="url(#edge)" stroke-width="1.5" stroke-opacity=".6">
-      <path class="wire" d="M244 112 H274"/>
-      <path class="wire" d="M478 112 H508"/>
-      <path class="wire" d="M712 112 H742"/>
-      <path class="wire" d="M946 112 H976"/>
-    </g>
-    <g fill="#1e1b4b">
-      <circle r="3"><animateMotion dur="7.5s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.12;.2;1" calcMode="linear" path="M244 112 H274"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.115;.12;.2;0.205;1" dur="7.5s" repeatCount="indefinite"/></circle>
-      <circle r="3"><animateMotion dur="7.5s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.32;.4;1" calcMode="linear" path="M478 112 H508"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.315;.32;.4;0.405;1" dur="7.5s" repeatCount="indefinite"/></circle>
-      <circle r="3"><animateMotion dur="7.5s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.52;.6;1" calcMode="linear" path="M712 112 H742"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.515;.52;.6;0.605;1" dur="7.5s" repeatCount="indefinite"/></circle>
-      <circle r="3"><animateMotion dur="7.5s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;.72;.8;1" calcMode="linear" path="M946 112 H976"/><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.715;.72;.8;0.805;1" dur="7.5s" repeatCount="indefinite"/></circle>
-    </g>
-
-    <!-- stages -->
-    <g class="sans">
-      <rect fill="#ffffff" class="box s1" x="40" y="62" width="204" height="100" rx="16" stroke-width="1.5"/>
-      <g class="ico s1"><circle cx="76" cy="96" r="16" fill="#ede9fe" stroke="#7c3aed" stroke-opacity=".55"/><text x="76" y="100.5" text-anchor="middle" class="mono" font-size="12.5" font-weight="700" fill="#6d28d9">01</text></g>
-      <text x="100" y="98" font-size="16" font-weight="600" fill="#111827">Design</text>
-      <text x="100" y="118" font-size="12.5" fill="#4b5563">requirements, APIs,</text>
-      <text x="100" y="136" font-size="12.5" fill="#4b5563">architecture</text>
-
-      <rect fill="#ffffff" class="box s2" x="274" y="62" width="204" height="100" rx="16" stroke-width="1.5"/>
-      <g class="ico s2"><circle cx="310" cy="96" r="16" fill="#ede9fe" stroke="#7c3aed" stroke-opacity=".55"/><text x="310" y="100.5" text-anchor="middle" class="mono" font-size="12.5" font-weight="700" fill="#6d28d9">02</text></g>
-      <text x="334" y="98" font-size="16" font-weight="600" fill="#111827">Build</text>
-      <text x="334" y="118" font-size="12.5" fill="#4b5563">backend services,</text>
-      <text x="334" y="136" font-size="12.5" fill="#4b5563">FastAPI · Node.js</text>
-
-      <rect fill="#ffffff" class="box s3" x="508" y="62" width="204" height="100" rx="16" stroke-width="1.5"/>
-      <g class="ico s3"><circle cx="544" cy="96" r="16" fill="#ede9fe" stroke="#7c3aed" stroke-opacity=".55"/><text x="544" y="100.5" text-anchor="middle" class="mono" font-size="12.5" font-weight="700" fill="#6d28d9">03</text></g>
-      <text x="568" y="98" font-size="16" font-weight="600" fill="#111827">Integrate</text>
-      <text x="568" y="118" font-size="12.5" fill="#4b5563">LLMs, RAG,</text>
-      <text x="568" y="136" font-size="12.5" fill="#4b5563">multi-agent flows</text>
-
-      <rect fill="#ffffff" class="box s4" x="742" y="62" width="204" height="100" rx="16" stroke-width="1.5"/>
-      <g class="ico s4"><circle cx="778" cy="96" r="16" fill="#ede9fe" stroke="#7c3aed" stroke-opacity=".55"/><text x="778" y="100.5" text-anchor="middle" class="mono" font-size="12.5" font-weight="700" fill="#6d28d9">04</text></g>
-      <text x="802" y="98" font-size="16" font-weight="600" fill="#111827">Test</text>
-      <text x="802" y="118" font-size="12.5" fill="#4b5563">pytest, Playwright,</text>
-      <text x="802" y="136" font-size="12.5" fill="#4b5563">CI/CD pipelines</text>
-
-      <rect fill="#ffffff" class="box s5" x="976" y="62" width="184" height="100" rx="16" stroke-width="1.5"/>
-      <g class="ico s5"><circle cx="1012" cy="96" r="16" fill="#ede9fe" stroke="#7c3aed" stroke-opacity=".55"/><text x="1012" y="100.5" text-anchor="middle" class="mono" font-size="12.5" font-weight="700" fill="#6d28d9">05</text></g>
-      <text x="1036" y="98" font-size="16" font-weight="600" fill="#111827">Ship</text>
-      <text x="1036" y="118" font-size="12.5" fill="#4b5563">Docker, Git,</text>
-      <text x="1036" y="136" font-size="12.5" fill="#4b5563">monitoring</text>
-    </g>
+<defs>
+  <clipPath id="card"><rect width="1200" height="232" rx="10"/></clipPath>
+  <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="#d0d7de"/></pattern>
+</defs>
+<g clip-path="url(#card)" class="sans">
+  <rect width="1200" height="232" fill="#ffffff"/>
+  <rect y="60" width="1200" height="172" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="60" fill="#f6f8fa"/>
+  <rect y="59" width="1200" height="1" fill="#d0d7de"/>
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.7063;0.7188;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/>
+    <circle cx="30" cy="30" r="8" fill="none" stroke="#9a6700" stroke-width="2.2" stroke-dasharray="16 34" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0 30 30" to="360 30 30" dur=".9s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1180" y="35" text-anchor="end" font-size="13" fill="#9a6700">In progress</text>
   </g>
-  <rect x=".75" y=".75" width="1198.5" height="188.5" rx="19.5" fill="none" stroke="#1e1b4b" stroke-opacity=".08" stroke-width="1.5"/>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.7062;0.7188;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/>
+    <circle cx="30" cy="30" r="10" fill="#1f883d"/>
+    <g transform="translate(23 23) scale(0.7)" fill="none" stroke="#ffffff" stroke-width="2.85714" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g>
+    <text x="1180" y="35" text-anchor="end" font-size="13" fill="#1a7f37">Success · 2m 11s</text>
+  </g>
+  <text x="50" y="35" font-size="15" font-weight="600" fill="#1f2328">How I build <tspan font-weight="400" fill="#59636e">· build-and-ship.yml · on: push</tspan></text>
+  <rect x="900" y="19" width="56" height="22" rx="11" fill="#0969da" fill-opacity=".12"/>
+  <text x="928" y="34" text-anchor="middle" class="mono" font-size="12" fill="#0969da">main</text>
+  <path d="M233 145.0H263" stroke="#d0d7de" stroke-width="2"/><path d="M233 145.0H263" stroke="#1a7f37" stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0.0000;0.1625;0.1875;0.9500;1.0000" calcMode="spline" keySplines="0 0 1 1;.45 0 .25 1;0 0 1 1;0 0 1 1" dur="16.0s" repeatCount="indefinite"/></path><circle cx="233" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><circle cx="263" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><rect x="37" y="112" width="196" height="66" rx="8" fill="#ffffff" stroke="#d0d7de"/><rect x="37" y="112" width="196" height="66" rx="8" fill="#9a6700" fill-opacity=".06" stroke="#9a6700" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0562;0.0688;0.1625;0.1750;1.0000" dur="16.0s" repeatCount="indefinite"/></rect><circle cx="61" cy="136" r="7" fill="none" stroke="#818b98" stroke-width="1.6" stroke-dasharray="2.5 2.5"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.0563;0.0625;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/></circle><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0562;0.0625;0.1625;0.1688;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="61" cy="136" r="7" fill="none" stroke="#9a6700" stroke-opacity=".3" stroke-width="2"/><circle cx="61" cy="136" r="7" fill="none" stroke="#9a6700" stroke-width="2" stroke-dasharray="14 30" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 61 136" to="360 61 136" dur=".9s" repeatCount="indefinite"/></circle></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1624;0.1750;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="61" cy="136" r="9" fill="#1f883d"/><g transform="translate(54.5 129.5) scale(0.65)" fill="none" stroke="#ffffff" stroke-width="3.07692" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g><text x="219" y="141" text-anchor="end" class="mono" font-size="12" fill="#59636e">8s</text></g><text x="79" y="141" font-size="14.5" font-weight="600" fill="#1f2328">Design</text><text x="79" y="163" font-size="12" fill="#59636e">contracts · data models</text><path d="M459 145.0H489" stroke="#d0d7de" stroke-width="2"/><path d="M459 145.0H489" stroke="#1a7f37" stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0.0000;0.2938;0.3188;0.9500;1.0000" calcMode="spline" keySplines="0 0 1 1;.45 0 .25 1;0 0 1 1;0 0 1 1" dur="16.0s" repeatCount="indefinite"/></path><circle cx="459" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><circle cx="489" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><rect x="263" y="112" width="196" height="66" rx="8" fill="#ffffff" stroke="#d0d7de"/><rect x="263" y="112" width="196" height="66" rx="8" fill="#9a6700" fill-opacity=".06" stroke="#9a6700" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1874;0.2000;0.2938;0.3063;1.0000" dur="16.0s" repeatCount="indefinite"/></rect><circle cx="287" cy="136" r="7" fill="none" stroke="#818b98" stroke-width="1.6" stroke-dasharray="2.5 2.5"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.1875;0.1938;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/></circle><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1874;0.1938;0.2938;0.3000;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="287" cy="136" r="7" fill="none" stroke="#9a6700" stroke-opacity=".3" stroke-width="2"/><circle cx="287" cy="136" r="7" fill="none" stroke="#9a6700" stroke-width="2" stroke-dasharray="14 30" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 287 136" to="360 287 136" dur=".9s" repeatCount="indefinite"/></circle></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2937;0.3063;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="287" cy="136" r="9" fill="#1f883d"/><g transform="translate(280.5 129.5) scale(0.65)" fill="none" stroke="#ffffff" stroke-width="3.07692" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g><text x="445" y="141" text-anchor="end" class="mono" font-size="12" fill="#59636e">41s</text></g><text x="305" y="141" font-size="14.5" font-weight="600" fill="#1f2328">Build</text><text x="305" y="163" font-size="12" fill="#59636e">FastAPI · Node.js</text><path d="M685 145.0H715" stroke="#d0d7de" stroke-width="2"/><path d="M685 145.0H715" stroke="#1a7f37" stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0.0000;0.4250;0.4500;0.9500;1.0000" calcMode="spline" keySplines="0 0 1 1;.45 0 .25 1;0 0 1 1;0 0 1 1" dur="16.0s" repeatCount="indefinite"/></path><circle cx="685" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><circle cx="715" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><rect x="489" y="112" width="196" height="66" rx="8" fill="#ffffff" stroke="#d0d7de"/><rect x="489" y="112" width="196" height="66" rx="8" fill="#9a6700" fill-opacity=".06" stroke="#9a6700" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3187;0.3313;0.4250;0.4375;1.0000" dur="16.0s" repeatCount="indefinite"/></rect><circle cx="513" cy="136" r="7" fill="none" stroke="#818b98" stroke-width="1.6" stroke-dasharray="2.5 2.5"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.3188;0.3250;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/></circle><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3187;0.3250;0.4250;0.4313;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="513" cy="136" r="7" fill="none" stroke="#9a6700" stroke-opacity=".3" stroke-width="2"/><circle cx="513" cy="136" r="7" fill="none" stroke="#9a6700" stroke-width="2" stroke-dasharray="14 30" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 513 136" to="360 513 136" dur=".9s" repeatCount="indefinite"/></circle></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4249;0.4375;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="513" cy="136" r="9" fill="#1f883d"/><g transform="translate(506.5 129.5) scale(0.65)" fill="none" stroke="#ffffff" stroke-width="3.07692" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g><text x="671" y="141" text-anchor="end" class="mono" font-size="12" fill="#59636e">27s</text></g><text x="531" y="141" font-size="14.5" font-weight="600" fill="#1f2328">Integrate</text><text x="531" y="163" font-size="12" fill="#59636e">APIs · LLMs · Docker</text><path d="M911 145.0H941" stroke="#d0d7de" stroke-width="2"/><path d="M911 145.0H941" stroke="#1a7f37" stroke-width="2" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;1;0;0;1" keyTimes="0.0000;0.5563;0.5813;0.9500;1.0000" calcMode="spline" keySplines="0 0 1 1;.45 0 .25 1;0 0 1 1;0 0 1 1" dur="16.0s" repeatCount="indefinite"/></path><circle cx="911" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><circle cx="941" cy="145.0" r="3.5" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/><rect x="715" y="112" width="196" height="66" rx="8" fill="#ffffff" stroke="#d0d7de"/><rect x="715" y="112" width="196" height="66" rx="8" fill="#9a6700" fill-opacity=".06" stroke="#9a6700" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4499;0.4625;0.5563;0.5687;1.0000" dur="16.0s" repeatCount="indefinite"/></rect><circle cx="739" cy="136" r="7" fill="none" stroke="#818b98" stroke-width="1.6" stroke-dasharray="2.5 2.5"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.4500;0.4563;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/></circle><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4499;0.4563;0.5563;0.5625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="739" cy="136" r="7" fill="none" stroke="#9a6700" stroke-opacity=".3" stroke-width="2"/><circle cx="739" cy="136" r="7" fill="none" stroke="#9a6700" stroke-width="2" stroke-dasharray="14 30" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 739 136" to="360 739 136" dur=".9s" repeatCount="indefinite"/></circle></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5562;0.5687;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="739" cy="136" r="9" fill="#1f883d"/><g transform="translate(732.5 129.5) scale(0.65)" fill="none" stroke="#ffffff" stroke-width="3.07692" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g><text x="897" y="141" text-anchor="end" class="mono" font-size="12" fill="#59636e">36s</text></g><text x="757" y="141" font-size="14.5" font-weight="600" fill="#1f2328">Test</text><text x="757" y="163" font-size="12" fill="#59636e">pytest · Playwright</text><rect x="941" y="112" width="196" height="66" rx="8" fill="#ffffff" stroke="#d0d7de"/><rect x="941" y="112" width="196" height="66" rx="8" fill="#9a6700" fill-opacity=".06" stroke="#9a6700" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5812;0.5938;0.6875;0.7000;1.0000" dur="16.0s" repeatCount="indefinite"/></rect><circle cx="965" cy="136" r="7" fill="none" stroke="#818b98" stroke-width="1.6" stroke-dasharray="2.5 2.5"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0.0000;0.5813;0.5875;0.9500;0.9688;1.0000" dur="16.0s" repeatCount="indefinite"/></circle><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.5812;0.5875;0.6875;0.6937;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="965" cy="136" r="7" fill="none" stroke="#9a6700" stroke-opacity=".3" stroke-width="2"/><circle cx="965" cy="136" r="7" fill="none" stroke="#9a6700" stroke-width="2" stroke-dasharray="14 30" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" from="0 965 136" to="360 965 136" dur=".9s" repeatCount="indefinite"/></circle></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.6874;0.7000;0.9500;0.9625;1.0000" dur="16.0s" repeatCount="indefinite"/><circle cx="965" cy="136" r="9" fill="#1f883d"/><g transform="translate(958.5 129.5) scale(0.65)" fill="none" stroke="#ffffff" stroke-width="3.07692" stroke-linecap="round" stroke-linejoin="round"><path d="m5 10.5 3.2 3.2L15.5 6.5"/></g><text x="1123" y="141" text-anchor="end" class="mono" font-size="12" fill="#59636e">19s</text></g><text x="983" y="141" font-size="14.5" font-weight="600" fill="#1f2328">Ship</text><text x="983" y="163" font-size="12" fill="#59636e">GitHub Actions · CI/CD</text>
+</g>
+<rect x=".5" y=".5" width="1199" height="231" rx="9.5" fill="none" stroke="#d0d7de"/>
+
 </svg>

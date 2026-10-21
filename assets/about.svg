@@ -1,60 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="whoami: Boin Prashasthi, software engineer and AI builder; B.Tech CSE (Cyber Security) at VNR VJIET, CGPA 9.15; focus: backend, APIs, full-stack, DevOps, agentic AI, RAG; now: Software Development Intern at FlyingDuck">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0b1f"/><stop offset="1" stop-color="#05060d"/></linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#16132e"/><stop offset="1" stop-color="#0f1226"/></linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
-    <radialGradient id="glow" cx=".85" cy=".2" r=".6"><stop offset="0" stop-color="#7c3aed" stop-opacity=".22"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
-    <clipPath id="card"><rect width="1200" height="400" rx="20"/></clipPath>
-    <!-- one reveal mask per line; all share a 16s loop so the session replays -->
-    <clipPath id="l1"><rect x="40" y="70" height="34" width="0"><animate attributeName="width" values="0;0;220;220;0" keyTimes="0;.02;.07;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l2"><rect x="40" y="104" height="34" width="0"><animate attributeName="width" values="0;0;720;720;0" keyTimes="0;.08;.11;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l3"><rect x="40" y="150" height="34" width="0"><animate attributeName="width" values="0;0;330;330;0" keyTimes="0;.16;.22;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l4"><rect x="40" y="184" height="34" width="0"><animate attributeName="width" values="0;0;720;720;0" keyTimes="0;.23;.26;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l5"><rect x="40" y="230" height="34" width="0"><animate attributeName="width" values="0;0;220;220;0" keyTimes="0;.32;.37;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l6"><rect x="40" y="264" height="34" width="0"><animate attributeName="width" values="0;0;1120;1120;0" keyTimes="0;.38;.42;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l7"><rect x="40" y="310" height="34" width="0"><animate attributeName="width" values="0;0;220;220;0" keyTimes="0;.50;.55;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-    <clipPath id="l8"><rect x="40" y="344" height="34" width="0"><animate attributeName="width" values="0;0;720;720;0" keyTimes="0;.56;.60;.96;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
-  </defs>
-  <style>
-    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-    .p { fill: #34d399; } .c { fill: #e5e7eb; } .o { fill: #9ca3af; } .k { fill: #c4b5fd; } .a { fill: #22d3ee; }
-    .tag { animation: tagin 16s ease-in-out infinite; }
-    @keyframes tagin { 0%, 40% { opacity: 0; } 44%, 96% { opacity: 1; } 100% { opacity: 0; } }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="447" viewBox="0 0 1200 447" role="img" aria-label="about.py: class Prashasthi(SoftwareEngineer). Role: Software Development Intern at FlyingDuck. Education: B.Tech CSE (Cyber Security), VNR VJIET, CGPA 9.15. Location: Hyderabad, India. Focus: backend, REST APIs, full-stack, generative AI, DevOps.">
+<title>about.py: class Prashasthi(SoftwareEngineer). Role: Software Development Intern at FlyingDuck. Education: B.Tech CSE (Cyber Security), VNR VJIET, CGPA 9.15. Location: Hyderabad, India. Focus: backend, REST APIs, full-stack, generative AI, DevOps.</title>
+<style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
 
-  <g clip-path="url(#card)">
-    <rect width="1200" height="400" fill="url(#bg)"/>
-    <rect width="1200" height="400" fill="url(#glow)"/>
-    <rect width="1200" height="44" fill="url(#bar)"/>
-    <circle cx="28" cy="22" r="6" fill="#ff5f57"/><circle cx="48" cy="22" r="6" fill="#febc2e"/><circle cx="68" cy="22" r="6" fill="#28c840"/>
-    <text x="600" y="27" text-anchor="middle" class="mono" font-size="13" fill="#6b7280">prashasthi@github: ~</text>
-    <rect y="44" width="1200" height="1" fill="#ffffff" fill-opacity=".06"/>
+<defs>
+  <clipPath id="card"><rect width="1200" height="447" rx="10"/></clipPath>
+  <clipPath id="ln0"><rect x="96" y="60" height="29" width="0"><animate attributeName="width" values="0;0;306;306;0;0" keyTimes="0.0000;0.0444;0.0658;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln1"><rect x="96" y="89" height="29" width="0"><animate attributeName="width" values="0;0;692;692;0;0" keyTimes="0.0000;0.0725;0.1220;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln2"><rect x="96" y="118" height="29" width="0"><animate attributeName="width" values="0;0;12;12;0;0" keyTimes="0.0000;0.1287;0.1353;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln3"><rect x="96" y="147" height="29" width="0"><animate attributeName="width" values="0;0;499;499;0;0" keyTimes="0.0000;0.1381;0.1736;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln4"><rect x="96" y="176" height="29" width="0"><animate attributeName="width" values="0;0;575;575;0;0" keyTimes="0.0000;0.1802;0.2212;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln5"><rect x="96" y="205" height="29" width="0"><animate attributeName="width" values="0;0;298;298;0;0" keyTimes="0.0000;0.2278;0.2486;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln6"><rect x="96" y="234" height="29" width="0"><animate attributeName="width" values="0;0;692;692;0;0" keyTimes="0.0000;0.2553;0.3048;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln7"><rect x="96" y="263" height="29" width="0"><animate attributeName="width" values="0;0;466;466;0;0" keyTimes="0.0000;0.3114;0.3444;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln8"><rect x="96" y="292" height="29" width="0"><animate attributeName="width" values="0;0;12;12;0;0" keyTimes="0.0000;0.3511;0.3578;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln9"><rect x="96" y="321" height="29" width="0"><animate attributeName="width" values="0;0;365;365;0;0" keyTimes="0.0000;0.3606;0.3862;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath><clipPath id="ln10"><rect x="96" y="350" height="29" width="0"><animate attributeName="width" values="0;0;432;432;0;0" keyTimes="0.0000;0.3929;0.4234;0.9444;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
+</defs>
+<g clip-path="url(#card)" class="sans">
+  <rect width="1200" height="447" fill="#0d1117"/>
+  <rect width="1200" height="50" fill="#161b22"/>
+  <rect y="49" width="1200" height="1" fill="#30363d"/>
+  <path d="M20 21l5 5 5-5" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(40 15) scale(1)" fill="none" stroke="#8b949e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2.5h6.5L15.5 6.5v11H5zM11.5 2.5v4h4"/></g>
+  <text x="68" y="30" class="mono" font-size="13.5" fill="#e6edf3">src/about.py</text>
+  <text x="186" y="30" class="mono" font-size="13" fill="#3fb950">+11</text>
+  <text x="216" y="30" class="mono" font-size="13" fill="#f85149">−0</text>
+  <rect x="248" y="20" width="8" height="8" rx="1.5" fill="#3fb950"/><rect x="259" y="20" width="8" height="8" rx="1.5" fill="#3fb950"/><rect x="270" y="20" width="8" height="8" rx="1.5" fill="#3fb950"/><rect x="281" y="20" width="8" height="8" rx="1.5" fill="#3fb950"/><rect x="292" y="20" width="8" height="8" rx="1.5" fill="#3fb950"/>
 
-    <g class="mono" font-size="17">
-      <g clip-path="url(#l1)"><text x="44" y="93"><tspan class="p">$ </tspan><tspan class="c">whoami</tspan></text></g>
-      <g clip-path="url(#l2)"><text x="44" y="127"><tspan class="k">Boin Prashasthi</tspan><tspan class="o">  ·  software engineer &amp; AI builder</tspan></text></g>
-
-      <g clip-path="url(#l3)"><text x="44" y="173"><tspan class="p">$ </tspan><tspan class="c">cat education.txt</tspan></text></g>
-      <g clip-path="url(#l4)"><text x="44" y="207" class="o">B.Tech CSE (Cyber Security)  ·  <tspan class="c">VNR VJIET</tspan>  ·  CGPA 9.15</text></g>
-
-      <g clip-path="url(#l5)"><text x="44" y="253"><tspan class="p">$ </tspan><tspan class="c">ls focus/</tspan></text></g>
-      <g clip-path="url(#l6)"><text x="44" y="287" class="a">backend/   apis/   full-stack/   devops/   agentic-ai/   rag/</text></g>
-
-      <g clip-path="url(#l7)"><text x="44" y="333"><tspan class="p">$ </tspan><tspan class="c">cat now.txt</tspan></text></g>
-      <g clip-path="url(#l8)"><text x="44" y="367" class="o">Software Development Intern  <tspan class="k">@ FlyingDuck</tspan></text></g>
-    </g>
-
-    <!-- cursor appears once the session has finished typing -->
-    <rect x="440" y="353" width="10" height="20" fill="#22d3ee" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;.60;.63;.66;.69;.72;.75;.78;.81;.84;.87;.9;1" dur="16s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- status tag on the right -->
-    <g class="tag">
-      <rect x="946" y="74" width="214" height="34" rx="17" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".4"/>
-      <circle cx="968" cy="91" r="5" fill="#34d399"><animate attributeName="r" values="4;6.5;4" dur="2s" repeatCount="indefinite"/></circle>
-      <text x="982" y="96" class="mono" font-size="13" fill="#a7f3d0">learning &amp; building</text>
-    </g>
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0.0000;0.4634;0.4801;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/>
+    <rect x="1088" y="12" width="96" height="26" rx="13" fill="#238636"/>
+    <g transform="translate(1099 17) scale(0.8)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="4" r="2"/><circle cx="5.5" cy="16" r="2"/><circle cx="14.5" cy="16" r="2"/><path d="M5.5 6v8M14.5 14V8a2.5 2.5 0 0 0-2.5-2.5H9M10.5 3.5 8.5 5.5l2 2"/></g>
+    <text x="1120" y="30" font-size="13" font-weight="600" fill="#ffffff">Open</text>
   </g>
-  <rect x=".75" y=".75" width="1198.5" height="398.5" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5"/>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4634;0.4801;0.9556;0.9722;1.0000" dur="18.0s" repeatCount="indefinite"/>
+    <rect x="1076" y="12" width="108" height="26" rx="13" fill="#8957e5"/>
+    <g transform="translate(1087 17) scale(0.8)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="4" r="2"/><circle cx="5.5" cy="16" r="2"/><circle cx="14.5" cy="11" r="2"/><path d="M5.5 6v8M5.5 6c0 3.5 3 5 7 5"/></g>
+    <text x="1108" y="30" font-size="13" font-weight="600" fill="#ffffff">Merged</text>
+  </g>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0444;0.0528;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="60" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="60" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="79" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">1</text><text x="76" y="79" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln0)"><text x="98" y="79" class="mono" font-size="14" xml:space="preserve"><tspan fill="#ff7b72">class </tspan><tspan fill="#d2a8ff">Prashasthi</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#d2a8ff">SoftwareEngineer</tspan><tspan fill="#e6edf3">):</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.0724;0.0808;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="89" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="89" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="108" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">2</text><text x="76" y="108" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln1)"><text x="98" y="108" class="mono" font-size="14" xml:space="preserve"><tspan fill="#a5d6ff">    &quot;&quot;&quot;I build backend services, APIs and AI systems that hold up in real use.&quot;&quot;&quot;</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1286;0.1370;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="118" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="118" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="137" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">3</text><text x="76" y="137" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln2)"><text x="98" y="137" class="mono" font-size="14" xml:space="preserve"></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1381;0.1464;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="147" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="147" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="166" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">4</text><text x="76" y="166" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln3)"><text x="98" y="166" class="mono" font-size="14" xml:space="preserve"><tspan fill="#e6edf3">    role      </tspan><tspan fill="#ff7b72">= </tspan><tspan fill="#a5d6ff">&quot;Software Development Intern @ FlyingDuck&quot;</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.1802;0.1886;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="176" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="176" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="195" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">5</text><text x="76" y="195" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln4)"><text x="98" y="195" class="mono" font-size="14" xml:space="preserve"><tspan fill="#e6edf3">    education </tspan><tspan fill="#ff7b72">= </tspan><tspan fill="#a5d6ff">&quot;B.Tech CSE (Cyber Security), VNR VJIET&quot;</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#e6edf3">cgpa</tspan><tspan fill="#ff7b72">=</tspan><tspan fill="#79c0ff">9.15</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2278;0.2362;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="205" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="205" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="224" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">6</text><text x="76" y="224" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln5)"><text x="98" y="224" class="mono" font-size="14" xml:space="preserve"><tspan fill="#e6edf3">    location  </tspan><tspan fill="#ff7b72">= </tspan><tspan fill="#a5d6ff">&quot;Hyderabad, India&quot;</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.2552;0.2636;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="234" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="234" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="253" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">7</text><text x="76" y="253" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln6)"><text x="98" y="253" class="mono" font-size="14" xml:space="preserve"><tspan fill="#e6edf3">    focus     </tspan><tspan fill="#ff7b72">= </tspan><tspan fill="#e6edf3">[</tspan><tspan fill="#a5d6ff">&quot;backend&quot;</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">&quot;rest-apis&quot;</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">&quot;full-stack&quot;</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">&quot;generative-ai&quot;</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#a5d6ff">&quot;devops&quot;</tspan><tspan fill="#e6edf3">]</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3114;0.3198;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="263" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="263" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="282" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">8</text><text x="76" y="282" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln7)"><text x="98" y="282" class="mono" font-size="14" xml:space="preserve"><tspan fill="#e6edf3">    shipping  </tspan><tspan fill="#ff7b72">= </tspan><tspan fill="#a5d6ff">&quot;a dependency upgrade impact analyzer&quot;</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3511;0.3594;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="292" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="292" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="311" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">9</text><text x="76" y="311" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln8)"><text x="98" y="311" class="mono" font-size="14" xml:space="preserve"></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3605;0.3689;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="321" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="321" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="340" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">10</text><text x="76" y="340" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln9)"><text x="98" y="340" class="mono" font-size="14" xml:space="preserve"><tspan fill="#ff7b72">    def </tspan><tspan fill="#d2a8ff">build</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#79c0ff">self</tspan><tspan fill="#e6edf3">, </tspan><tspan fill="#ffa657">idea</tspan><tspan fill="#e6edf3">: </tspan><tspan fill="#79c0ff">str</tspan><tspan fill="#e6edf3">) </tspan><tspan fill="#ff7b72">-&gt; </tspan><tspan fill="#d2a8ff">Release</tspan><tspan fill="#e6edf3">:</tspan></text></g></g><g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.3928;0.4012;0.9444;0.9528;1.0000" dur="18.0s" repeatCount="indefinite"/><rect x="0" y="350" width="1200" height="29" fill="#2ea043" fill-opacity=".15"/><rect x="0" y="350" width="64" height="29" fill="#2ea043" fill-opacity=".3"/><text x="48" y="369" text-anchor="end" class="mono" font-size="12.5" fill="#8b949e">11</text><text x="76" y="369" class="mono" font-size="14" fill="#3fb950">+</text><g clip-path="url(#ln10)"><text x="98" y="369" class="mono" font-size="14" xml:space="preserve"><tspan fill="#ff7b72">        return </tspan><tspan fill="#d2a8ff">ship</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#d2a8ff">test</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#d2a8ff">integrate</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#d2a8ff">design</tspan><tspan fill="#e6edf3">(</tspan><tspan fill="#ffa657">idea</tspan><tspan fill="#e6edf3">))))</tspan></text></g></g>
+
+  <rect y="393" width="1200" height="1" fill="#30363d"/>
+  <rect y="394" width="1200" height="54" fill="#161b22"/>
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0.0000;0.4634;0.4801;0.9667;1.0000" dur="18.0s" repeatCount="indefinite"/>
+    <circle cx="30" cy="421" r="7" fill="none" stroke="#d29922" stroke-width="2" stroke-dasharray="30 14">
+      <animateTransform attributeName="transform" type="rotate" from="0 30 421" to="360 30 421" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48" y="426" font-size="13.5" fill="#8b949e">Running checks <tspan class="mono" fill="#6e7681">lint · pytest · build</tspan></text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0000;0.4634;0.4801;0.9556;0.9722;1.0000" dur="18.0s" repeatCount="indefinite"/>
+    <circle cx="30" cy="421" r="11" fill="#8957e5"/>
+    <g transform="translate(23 414) scale(0.7)" fill="none" stroke="#ffffff" stroke-width="2.28571" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="4" r="2"/><circle cx="5.5" cy="16" r="2"/><circle cx="14.5" cy="11" r="2"/><path d="M5.5 6v8M5.5 6c0 3.5 3 5 7 5"/></g>
+    <text x="50" y="426" font-size="13.5" fill="#e6edf3"><tspan font-weight="600">Prashasthi-18</tspan> merged 1 commit into <tspan class="mono" fill="#4493f8">main</tspan> <tspan fill="#8b949e">· all checks passed</tspan></text>
+  </g>
+</g>
+<rect x=".5" y=".5" width="1199" height="446" rx="9.5" fill="none" stroke="#30363d"/>
+
 </svg>

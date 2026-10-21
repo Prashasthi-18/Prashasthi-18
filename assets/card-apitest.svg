@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="176" viewBox="0 0 600 176" role="img" aria-label="API-Testing-Agent: Give it an OpenAPI or Postman spec: it generates positive, negative and edge-case tests, runs them against the real API and explains every failure.">
+<title>API-Testing-Agent: Give it an OpenAPI or Postman spec: it generates positive, negative and edge-case tests, runs them against the real API and explains every failure.</title>
+<style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+    .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+    .sweep { stroke-dasharray: 140 860; stroke-dashoffset: 0; animation: sweep 9s linear infinite; }
+    @keyframes sweep { to { stroke-dashoffset: -1000; } }
+    </style>
+
+<defs><linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a371f7"/><stop offset="1" stop-color="#4493f8"/></linearGradient></defs>
+<g class="sans rise">
+  <rect x=".5" y=".5" width="599" height="175" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <rect class="sweep" x=".5" y=".5" width="599" height="175" rx="8" fill="none" stroke="url(#edge)" stroke-width="1.5" pathLength="1000" style="animation-delay:-11.7s"/>
+  <g transform="translate(22 22) scale(0.9)" fill="none" stroke="#8b949e" stroke-width="1.77778" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16.5V4.5A2 2 0 0 1 6 2.5h10v12H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h10M7.5 6.5h5"/></g>
+  <text x="48" y="37" font-size="16" font-weight="600" fill="#4493f8">API-Testing-Agent</text>
+  <rect x="196" y="23" width="52" height="20" rx="10" fill="none" stroke="#30363d"/>
+  <text x="222" y="37" text-anchor="middle" font-size="11.5" font-weight="500" fill="#8b949e">Public</text>
+  <text x="24" y="76" font-size="13.5" fill="#8b949e">Give it an OpenAPI or Postman spec: it generates positive, negative and edge-case tests,</text><text x="24" y="97" font-size="13.5" fill="#8b949e">runs them against the real API and explains every failure.</text>
+  <circle cx="30" cy="146" r="6" fill="#3178c6"/><text x="42" y="150.5" font-size="12.5" fill="#8b949e">TypeScript</text><rect x="124" y="135" width="61" height="22" rx="11" fill="#4493f8" fill-opacity=".1"/><text x="154" y="150" text-anchor="middle" font-size="11.5" font-weight="500" fill="#4493f8">openapi</text><rect x="191" y="135" width="75" height="22" rx="11" fill="#4493f8" fill-opacity=".1"/><text x="228" y="150" text-anchor="middle" font-size="11.5" font-weight="500" fill="#4493f8">llm-agents</text><rect x="271" y="135" width="55" height="22" rx="11" fill="#4493f8" fill-opacity=".1"/><text x="299" y="150" text-anchor="middle" font-size="11.5" font-weight="500" fill="#4493f8">testing</text>
+</g>
+</svg>
