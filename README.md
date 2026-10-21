@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://portfolio-rho-silk-72.vercel.app"><img src="https://img.shields.io/badge/Portfolio-portfolio--rho--silk--72.vercel.app-8B7CFF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
   <a href="https://www.linkedin.com/in/prashasthiboin/"><img src="https://img.shields.io/badge/LinkedIn-prashasthiboin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Email-boinprashasthi%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <img src="https://img.shields.io/badge/Based_in-Hyderabad,_India-7C3AED?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Hyderabad, India"/>
@@ -212,7 +213,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 | | |
 |---|---|
 | **Winner** | Room Style CTF Cyber Security Competition, conducted by GDGC |
-| **20+** | Hackathons across software development, AI and cybersecurity |
+| **25+** | Hackathons across software development, AI and cybersecurity |
 | **7+** | Capture the Flag competitions |
 | **Published** | Product management case studies on Notion |
 
@@ -254,6 +255,7 @@ A multi-layer guardrail design: input validation, PII redaction, human approval 
 I'm always happy to talk about backend engineering, APIs, AI systems, security or product ideas, and to team up on projects and hackathons.
 
 <p align="center">
+  <a href="https://portfolio-rho-silk-72.vercel.app"><img src="https://img.shields.io/badge/Visit_my-Portfolio-8B7CFF?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit my portfolio"/></a>
   <a href="https://www.linkedin.com/in/prashasthiboin/"><img src="https://img.shields.io/badge/Connect_on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn"/></a>
   <a href="mailto:boinprashasthi@gmail.com"><img src="https://img.shields.io/badge/Say-Hello-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me"/></a>
 </p>
